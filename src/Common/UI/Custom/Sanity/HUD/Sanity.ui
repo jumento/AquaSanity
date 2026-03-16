@@ -1,0 +1,44 @@
+Group {
+    LayoutMode: Bottom;
+
+    // Caja virtual de 702 pixeles de ancho anclada al centro de la pantalla.
+    // Garantiza que todo lo de adentro parta siempre de coordenadas centralizadas al redimensionar.
+    Group {
+        Anchor: (Width: 702);
+
+        Group #AquaSanityContainer {
+            Anchor: (Width: 90, Height: 90);
+            
+            Group {
+                Anchor: (Width: 90, Height: 90);
+                
+                Group #AquaSanityBackground {
+                    Anchor: (Width: 90, Height: 90);
+                    Background: "SanityBackground.png";
+                }
+                
+                CircularProgressBar #AquaSanityBar {
+                    Anchor: (Width: 90, Height: 90);
+                    Value: 1.0;
+                    Color: #9932CC;
+                    Background: #00000000;
+                    MaskTexturePath: "SanityCircleMask.png";
+                }
+
+                CircularProgressBar #AquaSanityBarEffect {
+                    Anchor: (Width: 90, Height: 90);
+                    Value: 1.0;
+                    Color: #c04080(0.6);
+                    Background: #00000000;
+                    MaskTexturePath: "SanityCircleMask.png";
+                }
+
+                Group #AquaSanityCreativeOverlay {
+                    Anchor: (Width: 90, Height: 90);
+                    Background: "SanityBackgroundcreative.png";
+                    Visible: false;
+                }
+            }
+        }
+    }
+}

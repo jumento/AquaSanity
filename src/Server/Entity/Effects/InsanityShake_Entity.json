@@ -1,0 +1,8 @@
+{
+  "Id": "InsanityShake_Entity",
+  "ApplicationEffects": {
+    "CameraEffect": "InsanityShake_Camera"
+  },
+  "Duration": 1.5,
+  "OverlapBehavior": "Overwrite"
+}

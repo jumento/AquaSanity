@@ -1,0 +1,7 @@
+{
+  "Type": "CameraShake",
+  "CameraShake": "MildShake_Config",
+  "Intensity": {
+    "Value": 1.0
+  }
+}

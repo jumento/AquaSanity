@@ -1,0 +1,7 @@
+{
+    "OverlapBehavior": "Overwrite",
+    "Debuff": false,
+    "StatusEffectIcon": "UI/Custom/Sanity/HUD/Sanityico.png",
+    "Infinite": false,
+    "Duration": 2
+}

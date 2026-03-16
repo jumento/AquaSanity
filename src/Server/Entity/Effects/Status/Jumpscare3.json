@@ -1,0 +1,8 @@
+{
+    "ApplicationEffects": {
+        "ScreenEffect": "ScreenEffects/InsanityEffect3.png"
+    },
+    "OverlapBehavior": "Overwrite",
+    "Infinite": false,
+    "Duration": 1
+}

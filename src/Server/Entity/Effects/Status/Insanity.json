@@ -1,0 +1,29 @@
+{
+    "ApplicationEffects": {
+        "EntityBottomTint": "#3d0000",
+        "EntityTopTint": "#3d0000",
+        "EntityAnimationId": "Hurt",
+        "ScreenEffect": "ScreenEffects/InsanityEffect.png",
+        "HorizontalSpeedMultiplier": 0.8,
+        "WorldSoundEventId": "SFX_Effect_Poison_World",
+        "LocalSoundEventId": "SFX_Effect_Poison_Local",
+        "MovementEffects": {
+            "DisableSprint": true
+        }
+    },
+    "DamageCalculatorCooldown": 3,
+    "DamageCalculator": {
+        "BaseDamage": {
+            "Insanity": 0
+        }
+    },
+    "DamageEffects": {
+        "WorldSoundEventId": "SFX_Effect_Poison_World",
+        "PlayerSoundEventId": "SFX_Effect_Poison_Local"
+    },
+    "OverlapBehavior": "Overwrite",
+    "Debuff": true,
+    "StatusEffectIcon": "UI/Custom/Sanity/HUD/Sanityico.png",
+    "Infinite": false,
+    "Duration": 300
+}

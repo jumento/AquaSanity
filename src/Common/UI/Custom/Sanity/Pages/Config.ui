@@ -1,0 +1,214 @@
+$C = "../../Common.ui";
+
+$C.@PageOverlay {
+  LayoutMode: Middle;
+
+  $C.@DecoratedContainer {
+    Anchor: (Width: 400);
+
+    #Title {
+      $C.@Title { @Text = "AquaSanity Configuration"; }
+    }
+
+    #Content {
+      LayoutMode: Top;
+      Padding: (Full: 16);
+
+      // Label description
+      Label {
+        Text: "Select HUD Position:";
+        Style: $C.@DefaultLabelStyle;
+        Anchor: (Bottom: 8);
+      }
+
+      // Dropdown for position
+      $C.@DropdownBox #PosSelector {
+        Anchor: (Width: 368, Height: 32, Bottom: 20);
+        NoItemsText: "No options";
+
+        DropdownEntry { Value: "LEFT"; Text: "LEFT"; }
+        DropdownEntry { Value: "CENTER"; Text: "CENTER"; }
+        DropdownEntry { Value: "RIGHT"; Text: "RIGHT"; }
+      }
+
+      // Label description Insanity
+      Label {
+        Text: "Insanity (0 to 100):";
+        Style: $C.@DefaultLabelStyle;
+        Anchor: (Bottom: 8);
+      }
+
+      // Slider for insanity
+      $C.@SliderNumberField #InsanitySlider {
+        @Anchor = (Width: 368, Bottom: 16);
+        Value: 20;
+        Min: 0;
+        Max: 100;
+        NumberFieldContainerAnchor: (Width: 60, Height: 40);
+      }
+
+      // CheckBox to enable damage at 0 sanity
+      $C.@CheckBoxWithLabel #DamageCheckbox {
+        @Text = "Enable Insanity Damage";
+        Anchor: (Bottom: 16);
+      }
+
+      // Label description Light Threshold
+      Label {
+        Text: "Max Light Level triggering depletion (0 to 15):";
+        Style: $C.@DefaultLabelStyle;
+        Anchor: (Bottom: 8);
+      }
+
+      // Slider for light threshold
+      $C.@SliderNumberField #LightThresholdSlider {
+        @Anchor = (Width: 368, Bottom: 16);
+        Value: 5;
+        Min: 0;
+        Max: 15;
+        NumberFieldContainerAnchor: (Width: 60, Height: 40);
+      }
+
+      // Label description Damage Sanity Loss
+      Label {
+        Text: "Sanity loss on damage (0 to 100):";
+        Style: $C.@DefaultLabelStyle;
+        Anchor: (Bottom: 8);
+      }
+
+      // Slider for damage sanity loss
+      $C.@SliderNumberField #DamageSanityLossSlider {
+        @Anchor = (Width: 368, Bottom: 16);
+        Value: 2;
+        Min: 0;
+        Max: 100;
+        NumberFieldContainerAnchor: (Width: 60, Height: 40);
+      }
+
+
+      // Label description Sanity Loss Interval
+      Label {
+        Text: "Sanity loss interval (seconds):";
+        Style: $C.@DefaultLabelStyle;
+        Anchor: (Bottom: 8);
+      }
+
+      // NumberField for sanity loss interval
+      $C.@NumberField #SanityLossIntervalInput {
+        @Anchor = (Width: 80, Height: 32, Bottom: 16);
+        Value: 5;
+      }
+
+      // Label description Taming Sanity Restore
+      Label {
+        Text: "Sanity recovered when feeding (0 to 100):";
+        Style: $C.@DefaultLabelStyle;
+        Anchor: (Bottom: 8);
+      }
+
+      // Slider for taming sanity restore
+      $C.@SliderNumberField #TamingSanityRestoreSlider {
+        @Anchor = (Width: 368, Bottom: 16);
+        Value: 10;
+        Min: 0;
+        Max: 100;
+        NumberFieldContainerAnchor: (Width: 60, Height: 40);
+      }
+
+      // Label description Farming Sanity Restore
+      Label {
+        Text: "Sanity recovered when farming (0 to 100):";
+        Style: $C.@DefaultLabelStyle;
+        Anchor: (Bottom: 8);
+      }
+
+      // Slider for farming sanity restore
+      $C.@SliderNumberField #FarmingSanityRestoreSlider {
+        @Anchor = (Width: 368, Bottom: 16);
+        Value: 2;
+        Min: 0;
+        Max: 100;
+        NumberFieldContainerAnchor: (Width: 60, Height: 40);
+      }
+
+      // Label description Kill Sanity Restore
+      Label {
+        Text: "Sanity recovered when killing enemies (0 to 100):";
+        Style: $C.@DefaultLabelStyle;
+        Anchor: (Bottom: 8);
+      }
+
+      // Slider for kill sanity restore
+      $C.@SliderNumberField #KillSanityRestoreSlider {
+        @Anchor = (Width: 368, Bottom: 16);
+        Value: 10;
+        Min: 0;
+        Max: 100;
+        NumberFieldContainerAnchor: (Width: 60, Height: 40);
+      }
+
+      // Label description Passive Kill Sanity Loss
+      Label {
+        Text: "Sanity lost when killing passives (0 to 100):";
+        Style: $C.@DefaultLabelStyle;
+        Anchor: (Bottom: 8);
+      }
+
+      // Slider for passive kill sanity loss
+      $C.@SliderNumberField #PassiveKillSanityLossSlider {
+        @Anchor = (Width: 368, Bottom: 16);
+        Value: 3;
+        Min: 0;
+        Max: 100;
+        NumberFieldContainerAnchor: (Width: 60, Height: 40);
+      }
+
+      // Label description Event Recovery Chance
+      Label {
+        Text: "Event Recovery Chance (0 to 100):";
+        Style: $C.@DefaultLabelStyle;
+        Anchor: (Bottom: 8);
+      }
+
+      // Slider for event recovery chance
+      $C.@SliderNumberField #EventRecoveryChanceSlider {
+        @Anchor = (Width: 368, Bottom: 16);
+        Value: 50;
+        Min: 0;
+        Max: 100;
+        NumberFieldContainerAnchor: (Width: 60, Height: 40);
+      }
+
+      // Label description Max Event Pause
+      Label {
+        Text: "Max Event Pause (seconds):";
+        Style: $C.@DefaultLabelStyle;
+        Anchor: (Bottom: 8);
+      }
+
+      // NumberField for max event pause
+      $C.@NumberField #MaxEventPauseInput {
+        @Anchor = (Width: 80, Height: 32, Bottom: 16);
+        Value: 60;
+      }
+
+      // Buttons container
+      Group {
+        LayoutMode: Right;
+        Anchor: (Height: 44);
+
+        $C.@TextButton #SaveBtn {
+          @Text = "Save & Apply";
+          @Anchor = (Right: 10, Width: 150);
+        }
+
+        $C.@CancelTextButton #CloseBtn {
+          @Text = "Close";
+          @Anchor = (Width: 100);
+        }
+      }
+    }
+
+    $C.@CloseButton #CloseTopBtn {}
+  }
+}
