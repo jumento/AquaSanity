@@ -1,0 +1,14 @@
+{
+  "Layers": [
+    {
+      "Files": ["Sounds/virtual_vibes-swoosh-whisper-1-404219.ogg"],
+      "Volume": 4,
+      "RandomSettings": {
+        "MinPitch": -2,
+        "MaxPitch": 2
+      }
+    }
+  ],
+  "Volume": 4,
+  "Parent": "SFX_Attn_Loud"
+}

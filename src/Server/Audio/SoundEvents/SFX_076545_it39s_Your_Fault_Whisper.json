@@ -1,0 +1,14 @@
+{
+  "Layers": [
+    {
+      "Files": ["Sounds/freesound_community-076545_it39s-your-fault-whisper-40306.ogg"],
+      "Volume": 4,
+      "RandomSettings": {
+        "MinPitch": -2,
+        "MaxPitch": 2
+      }
+    }
+  ],
+  "Volume": 4,
+  "Parent": "SFX_Attn_Loud"
+}

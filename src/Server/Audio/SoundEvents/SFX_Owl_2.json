@@ -1,0 +1,14 @@
+{
+  "Layers": [
+    {
+      "Files": ["Sounds/universfield-owl-2-139676.ogg"],
+      "Volume": 4,
+      "RandomSettings": {
+        "MinPitch": -2,
+        "MaxPitch": 2
+      }
+    }
+  ],
+  "Volume": 4,
+  "Parent": "SFX_Attn_Loud"
+}

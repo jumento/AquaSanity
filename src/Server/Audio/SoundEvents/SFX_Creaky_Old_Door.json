@@ -1,0 +1,14 @@
+{
+  "Layers": [
+    {
+      "Files": ["Sounds/dragon-studio-creaky-old-door-472357.ogg"],
+      "Volume": 4,
+      "RandomSettings": {
+        "MinPitch": -2,
+        "MaxPitch": 2
+      }
+    }
+  ],
+  "Volume": 4,
+  "Parent": "SFX_Attn_Loud"
+}
